@@ -1,0 +1,6 @@
+# action.yml
+name: 'api-docker'
+description: 'LOOPBACK 4 API'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
