@@ -7,6 +7,7 @@ export declare class Solution extends UserModifiableEntity {
     description: string;
     active: number;
     agentIds: number[];
+    clientId: number;
     form: Form;
     formId?: number;
     [prop: string]: any;

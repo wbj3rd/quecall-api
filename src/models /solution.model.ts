@@ -64,8 +64,8 @@ export class Solution extends UserModifiableEntity {
 
   // @hasMany(() => Agent, {through: {model: () => AgentSolution}})
   // agents: Agent[];
-  // @belongsTo(() => Client)
-  // clientId: number;
+  @belongsTo(() => Client)
+  clientId: number;
 
   // @hasMany(() => AgentSolution)
   // agentSolutions: AgentSolution[];
