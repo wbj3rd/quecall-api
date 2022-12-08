@@ -5,6 +5,8 @@ import {
   get,
   response,
   ResponseObject,
+  post,
+  requestBody,
 } from '@loopback/rest';
 
 /**
@@ -52,4 +54,18 @@ export class PingController {
       headers: Object.assign({}, this.req.headers),
     };
   }
+
+  @post('/create/agent')
+  @response(200)
+
+  async createAgent(
+    @requestBody() body: any,
+  ) {
+    //call asterisk sdd misc ext
+    //OR
+    //call asterisk and add extension and user to db => if they ar eusing a softphoe
+    console.log("Add Agent")
+    // console.log(this.req)
+   // return this.nodeService.addUser(body.user)
+  }  
 }

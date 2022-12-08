@@ -5,8 +5,8 @@ import {PostgresDataSource} from '../datasources';
 import {AgentRepository} from './agent.repository';
 import {SolutionRepository} from './solution.repository';
 
-import {Solution} from '../models';
-import {Client, ClientRelations} from '../models/client.model';
+import {Solution} from '../models ';
+import {Client, ClientRelations} from '../models /client.model';
 
 
 export class ClientRepository extends DefaultCrudRepository<

@@ -47,6 +47,14 @@ let PingController = class PingController {
             headers: Object.assign({}, this.req.headers),
         };
     }
+    async createAgent(body) {
+        //call asterisk sdd misc ext
+        //OR
+        //call asterisk and add extension and user to db => if they ar eusing a softphoe
+        console.log("Add Agent");
+        // console.log(this.req)
+        // return this.nodeService.addUser(body.user)
+    }
 };
 tslib_1.__decorate([
     (0, rest_1.get)('/ping'),
@@ -55,6 +63,14 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", []),
     tslib_1.__metadata("design:returntype", Object)
 ], PingController.prototype, "ping", null);
+tslib_1.__decorate([
+    (0, rest_1.post)('/create/agent'),
+    (0, rest_1.response)(200),
+    tslib_1.__param(0, (0, rest_1.requestBody)()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [Object]),
+    tslib_1.__metadata("design:returntype", Promise)
+], PingController.prototype, "createAgent", null);
 PingController = tslib_1.__decorate([
     tslib_1.__param(0, (0, core_1.inject)(rest_1.RestBindings.Http.REQUEST)),
     tslib_1.__metadata("design:paramtypes", [Object])

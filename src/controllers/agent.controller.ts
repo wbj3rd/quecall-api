@@ -12,7 +12,7 @@ import {
   getModelSchemaRef, param, patch, post, put, requestBody,
   response
 } from '@loopback/rest';
-import {Agent} from '../models';
+import {Agent} from '../models ';
 import {AgentRepository} from '../repositories';
 import {PingController} from './ping.controller';
 export class AgentController {

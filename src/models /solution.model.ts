@@ -51,26 +51,26 @@ export class Solution extends UserModifiableEntity {
   })
   agentIds: number[];
 
-  @hasOne(() => PhoneNumber)
-  phoneNumber: PhoneNumber;
+  // @hasOne(() => PhoneNumber)
+  // phoneNumber: PhoneNumber;
 
-  @hasOne(() => Music)
-  music: Music;
+  // @hasOne(() => Music)
+  // music: Music;
 
-  @hasOne(() => Queue)
-  queue: Queue;
+  // @hasOne(() => Queue)
+  // queue: Queue;
 
 
 
-  @hasMany(() => Agent, {through: {model: () => AgentSolution}})
-  agents: Agent[];
-  @belongsTo(() => Client)
-  clientId: number;
+  // @hasMany(() => Agent, {through: {model: () => AgentSolution}})
+  // agents: Agent[];
+  // @belongsTo(() => Client)
+  // clientId: number;
 
-  @hasMany(() => AgentSolution)
-  agentSolutions: AgentSolution[];
+  // @hasMany(() => AgentSolution)
+  // agentSolutions: AgentSolution[];
 
-  @hasOne(() => Form, {keyFrom: 'formId', keyTo: "id"})
+  // @hasOne(() => Form, {keyFrom: 'formId', keyTo: "id"})
   form: Form;
 
   @property({
@@ -84,7 +84,7 @@ export class Solution extends UserModifiableEntity {
   [prop: string]: any;
 
   constructor(data?: Partial<Solution>) {
-    super(data);
+    super();
   }
 }
 

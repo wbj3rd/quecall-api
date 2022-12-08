@@ -1,7 +1,7 @@
 import {Getter, inject} from '@loopback/core';
 import {DefaultCrudRepository, HasManyThroughRepositoryFactory, HasOneRepositoryFactory, repository, HasManyRepositoryFactory} from '@loopback/repository';
 import {PostgresDataSource} from '../datasources';
-import {Agent, AgentRelations, AgentSolution, Client, Extension, Solution} from '../models';
+import {Agent, AgentRelations, AgentSolution, Client, Extension, Solution} from '../models ';
 import {AgentSolutionRepository} from './agent-solution.repository';
 import {ClientRepository} from './client.repository';
 import {ExtensionRepository} from './extension.repository';

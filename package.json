@@ -56,6 +56,11 @@
     "@loopback/rest-explorer": "^5.0.3",
     "@loopback/service-proxy": "^5.0.3",
     "loopback-connector-postgresql": "^6.0.0",
+    "loopback4-soft-delete": "^7.0.2",
+    "loopback-connector-rest": "^3.7.0",
+    "loopback-connector-twilio": "^1.0.0",
+    "loopback4-authentication": "^7.0.0",
+    "loopback4-authorization": "^5.0.6",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

@@ -12,7 +12,7 @@ import {
   getModelSchemaRef, param, patch, post, put, requestBody,
   response
 } from '@loopback/rest';
-import {Client} from '../models';
+import {Client} from '../models ';
 import {ClientRepository} from '../repositories';
 import {PingController} from './ping.controller';
 

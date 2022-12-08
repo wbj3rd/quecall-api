@@ -29,8 +29,8 @@ export class Form extends UserModifiableEntity {
   })
   solutionId?: number;
 
-  @hasOne(() => Solution)
-  solution: Solution;
+  // @hasOne(() => Solution)
+  // solution: Solution;
   // Define well-known properties here
 
   // Indexer property to allow additional data
@@ -38,7 +38,7 @@ export class Form extends UserModifiableEntity {
   [prop: string]: any;
 
   constructor(data?: Partial<Form>) {
-    super(data);
+    super();
   }
 }
 

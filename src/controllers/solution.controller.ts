@@ -11,7 +11,7 @@ import {
   getModelSchemaRef, param, patch, post, put, requestBody,
   response
 } from '@loopback/rest';
-import {Solution} from '../models';
+import {Solution} from '../models ';
 import {SolutionRepository} from '../repositories';
 
 export class SolutionController {
