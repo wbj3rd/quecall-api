@@ -10,6 +10,7 @@ async function exportOpenApiSpec() {
         rest: {
             port: +((_a = process.env.PORT) !== null && _a !== void 0 ? _a : 3000),
             host: (_b = process.env.HOST) !== null && _b !== void 0 ? _b : 'localhost',
+            protocol: 'https'
         },
     };
     const outFile = (_c = process.argv[2]) !== null && _c !== void 0 ? _c : '';
