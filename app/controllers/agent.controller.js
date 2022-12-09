@@ -43,16 +43,7 @@ tslib_1.__decorate([
         description: 'Agent model instance',
         content: { 'application/json': { schema: (0, rest_1.getModelSchemaRef)(models_1.Agent) } },
     }),
-    tslib_1.__param(0, (0, rest_1.requestBody)({
-        content: {
-            'application/json': {
-                schema: (0, rest_1.getModelSchemaRef)(models_1.Agent, {
-                    title: 'NewAgent',
-                    exclude: ['id'],
-                }),
-            },
-        },
-    })),
+    tslib_1.__param(0, (0, rest_1.requestBody)()),
     tslib_1.__metadata("design:type", Function),
     tslib_1.__metadata("design:paramtypes", [Object]),
     tslib_1.__metadata("design:returntype", Promise)

@@ -32,16 +32,7 @@ export class AgentController {
     content: {'application/json': {schema: getModelSchemaRef(Agent)}},
   })
   async create(
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Agent, {
-            title: 'NewAgent',
-            exclude: ['id'],
-          }),
-        },
-      },
-    })
+    @requestBody()
     agent: Omit<Agent, 'id'>,
   ): Promise<Agent> {
     console.log("NEW AGENT")
