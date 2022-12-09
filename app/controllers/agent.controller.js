@@ -11,6 +11,7 @@ let AgentController = class AgentController {
         this.agentRepository = agentRepository;
     }
     async create(agent) {
+        console.log(agent);
         return this.agentRepository.create(agent);
     }
     async count(where) {

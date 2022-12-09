@@ -44,6 +44,7 @@ export class AgentController {
     })
     agent: Omit<Agent, 'id'>,
   ): Promise<Agent> {
+    console.log(agent)
     return this.agentRepository.create(agent);
   }
 
