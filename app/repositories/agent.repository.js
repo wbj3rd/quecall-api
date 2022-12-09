@@ -13,14 +13,14 @@ let AgentRepository = class AgentRepository extends repository_1.DefaultCrudRepo
         this.agentSolutionRepositoryGetter = agentSolutionRepositoryGetter;
         this.clientRepositoryGetter = clientRepositoryGetter;
         this.solutionRepositoryGetter = solutionRepositoryGetter;
-        this.agentSolutions = this.createHasManyRepositoryFactoryFor('agentSolutions', agentSolutionRepositoryGetter);
-        this.registerInclusionResolver('agentSolutions', this.agentSolutions.inclusionResolver);
-        this.solutions = this.createHasManyThroughRepositoryFactoryFor('solutions', solutionRepositoryGetter, agentSolutionRepositoryGetter);
-        this.registerInclusionResolver('solutions', this.solutions.inclusionResolver);
-        this.clients = this.createHasManyThroughRepositoryFactoryFor('clients', clientRepositoryGetter, agentSolutionRepositoryGetter);
-        this.registerInclusionResolver('clients', this.clients.inclusionResolver);
-        this.extension = this.createHasOneRepositoryFactoryFor('extension', extensionRepositoryGetter);
-        this.registerInclusionResolver('extension', this.extension.inclusionResolver);
+        // this.agentSolutions = this.createHasManyRepositoryFactoryFor('agentSolutions', agentSolutionRepositoryGetter,);
+        // this.registerInclusionResolver('agentSolutions', this.agentSolutions.inclusionResolver);
+        // this.solutions = this.createHasManyThroughRepositoryFactoryFor('solutions', solutionRepositoryGetter, agentSolutionRepositoryGetter,);
+        // this.registerInclusionResolver('solutions', this.solutions.inclusionResolver);
+        // this.clients = this.createHasManyThroughRepositoryFactoryFor('clients', clientRepositoryGetter, agentSolutionRepositoryGetter,);
+        // this.registerInclusionResolver('clients', this.clients.inclusionResolver);
+        // this.extension = this.createHasOneRepositoryFactoryFor('extension', extensionRepositoryGetter);
+        // this.registerInclusionResolver('extension', this.extension.inclusionResolver);
     }
 };
 AgentRepository = tslib_1.__decorate([
