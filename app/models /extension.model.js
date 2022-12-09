@@ -31,13 +31,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], Extension.prototype, "asteriskId", void 0);
-tslib_1.__decorate([
-    (0, repository_1.property)({
-        type: 'number',
-        required: true,
-    }),
-    tslib_1.__metadata("design:type", Number)
-], Extension.prototype, "agentId", void 0);
 Extension = tslib_1.__decorate([
     (0, repository_1.model)({ settings: { strict: false } }),
     tslib_1.__metadata("design:paramtypes", [Object])

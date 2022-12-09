@@ -24,13 +24,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], Queue.prototype, "name", void 0);
-tslib_1.__decorate([
-    (0, repository_1.property)({
-        type: 'number',
-        required: true,
-    }),
-    tslib_1.__metadata("design:type", Number)
-], Queue.prototype, "solutionId", void 0);
 Queue = tslib_1.__decorate([
     (0, repository_1.model)({ settings: { strict: false } }),
     tslib_1.__metadata("design:paramtypes", [Object])

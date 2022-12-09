@@ -4,7 +4,6 @@ export declare class Music extends BaseEntity {
     name: string;
     link: string;
     codec?: string;
-    solutionId?: number;
     [prop: string]: any;
     constructor(data?: Partial<Music>);
 }

@@ -30,12 +30,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], PhoneNumber.prototype, "twilioId", void 0);
-tslib_1.__decorate([
-    (0, repository_1.property)({
-        type: 'number',
-    }),
-    tslib_1.__metadata("design:type", Number)
-], PhoneNumber.prototype, "solutionId", void 0);
 PhoneNumber = tslib_1.__decorate([
     (0, repository_1.model)({ settings: { strict: false } }),
     tslib_1.__metadata("design:paramtypes", [Object])

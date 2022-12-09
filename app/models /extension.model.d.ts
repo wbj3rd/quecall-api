@@ -3,7 +3,6 @@ export declare class Extension extends UserModifiableEntity {
     id?: number;
     name: string;
     asteriskId: string;
-    agentId: number;
     [prop: string]: any;
     constructor(data?: Partial<Extension>);
 }

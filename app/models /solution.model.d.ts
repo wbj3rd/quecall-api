@@ -1,4 +1,3 @@
-import { Form } from './form.model';
 import { UserModifiableEntity } from './user-modifiable-entity.model';
 export declare class Solution extends UserModifiableEntity {
     id?: number;
@@ -6,11 +5,6 @@ export declare class Solution extends UserModifiableEntity {
     type: string;
     description: string;
     active: number;
-    agentIds: number[];
-    clientId: number;
-    form: Form;
-    formId?: number;
-    [prop: string]: any;
     constructor(data?: Partial<Solution>);
 }
 export interface SolutionRelations {

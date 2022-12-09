@@ -22,10 +22,7 @@ export class PhoneNumber extends UserModifiableEntity {
   })
   twilioId?: string;
 
-  @property({
-    type: 'number',
-  })
-  solutionId?: number;
+
 
   // Define well-known properties here
 

@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.User = void 0;
 const tslib_1 = require("tslib");
 const repository_1 = require("@loopback/repository");
-const user_credentials_model_1 = require("./user-credentials.model");
 const user_modifiable_entity_model_1 = require("./user-modifiable-entity.model");
 let User = class User extends user_modifiable_entity_model_1.UserModifiableEntity {
     constructor(data) {
@@ -100,10 +99,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], User.prototype, "lastLogin", void 0);
-tslib_1.__decorate([
-    (0, repository_1.hasOne)(() => user_credentials_model_1.UserCredentials, { keyTo: 'userId' }),
-    tslib_1.__metadata("design:type", user_credentials_model_1.UserCredentials)
-], User.prototype, "credentials", void 0);
 User = tslib_1.__decorate([
     (0, repository_1.model)({
         name: 'users',

@@ -17,11 +17,7 @@ export class Queue extends UserModifiableEntity {
   })
   name: string;
 
-  @property({
-    type: 'number',
-    required: true,
-  })
-  solutionId: number;
+
 
   // Define well-known properties here
 

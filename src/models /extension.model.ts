@@ -23,11 +23,7 @@ export class Extension extends UserModifiableEntity {
   })
   asteriskId: string;
 
-  @property({
-    type: 'number',
-    required: true,
-  })
-  agentId: number;
+
 
   // Define well-known properties here
 

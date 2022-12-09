@@ -3,7 +3,6 @@ export declare class PhoneNumber extends UserModifiableEntity {
     id?: number;
     phone_number: string;
     twilioId?: string;
-    solutionId?: number;
     [prop: string]: any;
     constructor(data?: Partial<PhoneNumber>);
 }

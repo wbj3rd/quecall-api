@@ -9,6 +9,5 @@ tslib_1.__exportStar(require("./music.model"), exports);
 tslib_1.__exportStar(require("./phone-number.model"), exports);
 tslib_1.__exportStar(require("./queue.model"), exports);
 tslib_1.__exportStar(require("./solution.model"), exports);
-tslib_1.__exportStar(require("./agent-solution.model"), exports);
 tslib_1.__exportStar(require("./form.model"), exports);
 //# sourceMappingURL=index.js.map

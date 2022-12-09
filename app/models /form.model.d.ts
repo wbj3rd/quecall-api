@@ -3,7 +3,6 @@ export declare class Form extends UserModifiableEntity {
     id?: number;
     formData?: object;
     active?: number;
-    solutionId?: number;
     [prop: string]: any;
     constructor(data?: Partial<Form>);
 }

@@ -24,10 +24,7 @@ export class Form extends UserModifiableEntity {
   })
   active?: number;
 
-  @property({
-    type: 'number',
-  })
-  solutionId?: number;
+
 
   // @hasOne(() => Solution)
   // solution: Solution;

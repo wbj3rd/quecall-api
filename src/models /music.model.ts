@@ -28,10 +28,7 @@ export class Music extends BaseEntity {
   })
   codec?: string;
 
-  @property({
-    type: 'number',
-  })
-  solutionId?: number;
+
   // Define well-known properties here
 
   // Indexer property to allow additional data

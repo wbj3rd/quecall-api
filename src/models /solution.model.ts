@@ -1,5 +1,4 @@
 import {belongsTo, hasMany, hasOne, model, property} from '@loopback/repository';
-import {AgentSolution} from './agent-solution.model';
 import {Agent} from './agent.model';
 import {Client} from './client.model';
 import {Form} from './form.model';
@@ -44,44 +43,9 @@ export class Solution extends UserModifiableEntity {
   active: number;
 
 
-  @property({
-    type: 'array',
-    itemType: 'number'
-
-  })
-  agentIds: number[];
-
-  // @hasOne(() => PhoneNumber)
-  // phoneNumber: PhoneNumber;
-
-  // @hasOne(() => Music)
-  // music: Music;
-
-  // @hasOne(() => Queue)
-  // queue: Queue;
 
 
 
-  // @hasMany(() => Agent, {through: {model: () => AgentSolution}})
-  // agents: Agent[];
-  @belongsTo(() => Client)
-  clientId: number;
-
-  // @hasMany(() => AgentSolution)
-  // agentSolutions: AgentSolution[];
-
-  // @hasOne(() => Form, {keyFrom: 'formId', keyTo: "id"})
-  form: Form;
-
-  @property({
-    type: 'number',
-  })
-  formId?: number;
-  // Define well-known properties here
-
-  // Indexer property to allow additional data
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [prop: string]: any;
 
   constructor(data?: Partial<Solution>) {
     super();
