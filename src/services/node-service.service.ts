@@ -3,8 +3,8 @@ import {getService} from '@loopback/service-proxy';
 // import {PhoneNumber} from 'twilio/lib/interfaces';
 
  import {NodeserverDataSource} from '../datasources';
-import {Queue} from '../models ';
-import {User} from '../models /user.model';
+import {Queue} from '../models';
+import {User} from '../models/user.model';
 
 export interface solution {
   // agent: User

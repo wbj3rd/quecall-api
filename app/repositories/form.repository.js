@@ -5,7 +5,7 @@ const tslib_1 = require("tslib");
 const core_1 = require("@loopback/core");
 const repository_1 = require("@loopback/repository");
 const datasources_1 = require("../datasources");
-const models_1 = require("../models ");
+const models_1 = require("../models");
 let FormRepository = class FormRepository extends repository_1.DefaultCrudRepository {
     constructor(dataSource, solutionRepositoryGetter) {
         super(models_1.Form, dataSource);

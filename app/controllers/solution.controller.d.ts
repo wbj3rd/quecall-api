@@ -1,5 +1,5 @@
 import { Count, Filter, FilterExcludingWhere, Where } from '@loopback/repository';
-import { Solution } from '../models ';
+import { Solution } from '../models';
 import { SolutionRepository } from '../repositories';
 export declare class SolutionController {
     solutionRepository: SolutionRepository;

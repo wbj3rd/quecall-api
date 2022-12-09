@@ -1,7 +1,7 @@
 import { Getter } from '@loopback/core';
 import { BelongsToAccessor, DefaultCrudRepository, HasManyThroughRepositoryFactory, HasOneRepositoryFactory, HasManyRepositoryFactory } from '@loopback/repository';
 import { PostgresDataSource } from '../datasources';
-import { Agent, AgentSolution, Client, Music, PhoneNumber, Queue, Solution, SolutionRelations, Form } from '../models ';
+import { Agent, AgentSolution, Client, Music, PhoneNumber, Queue, Solution, SolutionRelations, Form } from '../models';
 import { AgentSolutionRepository } from './agent-solution.repository';
 import { AgentRepository } from './agent.repository';
 import { ClientRepository } from './client.repository';

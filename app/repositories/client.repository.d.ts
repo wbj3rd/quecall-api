@@ -3,8 +3,8 @@ import { DefaultCrudRepository, HasManyRepositoryFactory } from '@loopback/repos
 import { PostgresDataSource } from '../datasources';
 import { AgentRepository } from './agent.repository';
 import { SolutionRepository } from './solution.repository';
-import { Solution } from '../models ';
-import { Client, ClientRelations } from '../models /client.model';
+import { Solution } from '../models';
+import { Client, ClientRelations } from '../models/client.model';
 export declare class ClientRepository extends DefaultCrudRepository<Client, typeof Client.prototype.id, ClientRelations> {
     protected solutionRepositoryGetter: Getter<SolutionRepository>;
     protected agentRepositoryGetter: Getter<AgentRepository>;

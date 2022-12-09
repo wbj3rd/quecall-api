@@ -1,5 +1,5 @@
 import { Count, Filter, FilterExcludingWhere, Where } from '@loopback/repository';
-import { Agent } from '../models ';
+import { Agent } from '../models';
 import { AgentRepository } from '../repositories';
 import { PingController } from './ping.controller';
 export declare class AgentController {

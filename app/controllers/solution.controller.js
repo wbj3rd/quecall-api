@@ -4,7 +4,7 @@ exports.SolutionController = void 0;
 const tslib_1 = require("tslib");
 const repository_1 = require("@loopback/repository");
 const rest_1 = require("@loopback/rest");
-const models_1 = require("../models ");
+const models_1 = require("../models");
 const repositories_1 = require("../repositories");
 let SolutionController = class SolutionController {
     constructor(solutionRepository) {

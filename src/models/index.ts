@@ -1,4 +1,4 @@
-export * from './';
+export * from '.';
 export * from './agent.model';
 export * from './client.model';
 export * from './extension.model';
