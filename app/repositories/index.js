@@ -4,7 +4,6 @@ const tslib_1 = require("tslib");
 tslib_1.__exportStar(require("./agent.repository"), exports);
 tslib_1.__exportStar(require("./client.repository"), exports);
 tslib_1.__exportStar(require("./extension.repository"), exports);
-tslib_1.__exportStar(require("./form.repository"), exports);
 tslib_1.__exportStar(require("./music.repository"), exports);
 tslib_1.__exportStar(require("./phone-number.repository"), exports);
 tslib_1.__exportStar(require("./queue.repository"), exports);
