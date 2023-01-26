@@ -11,9 +11,9 @@ let Agent = class Agent extends user_model_1.User {
 };
 tslib_1.__decorate([
     (0, repository_1.property)({
-        type: 'number',
+        type: 'string',
     }),
-    tslib_1.__metadata("design:type", Number)
+    tslib_1.__metadata("design:type", String)
 ], Agent.prototype, "id", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({

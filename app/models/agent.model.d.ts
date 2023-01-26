@@ -1,6 +1,6 @@
 import { User } from './user.model';
 export declare class Agent extends User {
-    id?: number;
+    id?: string;
     type: string;
     [prop: string]: any;
     constructor(data?: Partial<Agent>);

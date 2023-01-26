@@ -8,4 +8,5 @@ tslib_1.__exportStar(require("./music.repository"), exports);
 tslib_1.__exportStar(require("./phone-number.repository"), exports);
 tslib_1.__exportStar(require("./queue.repository"), exports);
 tslib_1.__exportStar(require("./solution.repository"), exports);
+tslib_1.__exportStar(require("./user.repository"), exports);
 //# sourceMappingURL=index.js.map

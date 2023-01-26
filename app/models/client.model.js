@@ -16,9 +16,9 @@ tslib_1.__decorate([
 ], Client.prototype, "solutions", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
-        type: 'number',
+        type: 'string',
     }),
-    tslib_1.__metadata("design:type", Number)
+    tslib_1.__metadata("design:type", String)
 ], Client.prototype, "id", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({

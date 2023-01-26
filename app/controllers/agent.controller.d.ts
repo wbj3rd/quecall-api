@@ -8,8 +8,8 @@ export declare class AgentController {
     count(where?: Where<Agent>): Promise<Count>;
     find(filter?: Filter<Agent>): Promise<Agent[]>;
     updateAll(agent: Agent, where?: Where<Agent>): Promise<Count>;
-    findById(id: number, filter?: FilterExcludingWhere<Agent>): Promise<Agent>;
-    updateById(id: number, agent: Agent): Promise<void>;
-    replaceById(id: number, agent: Agent): Promise<void>;
-    deleteById(id: number): Promise<void>;
+    findById(id: string, filter?: FilterExcludingWhere<Agent>): Promise<Agent>;
+    updateById(id: string, agent: Agent): Promise<void>;
+    replaceById(id: string, agent: Agent): Promise<void>;
+    deleteById(id: string): Promise<void>;
 }

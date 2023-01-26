@@ -98,7 +98,7 @@ export class AgentController {
     },
   })
   async findById(
-    @param.path.number('id') id: number,
+    @param.path.number('id') id: string,
     @param.filter(Agent, {exclude: 'where'}) filter?: FilterExcludingWhere<Agent>
   ): Promise<Agent> {
     return this.agentRepository.findById(id, filter);
@@ -109,7 +109,7 @@ export class AgentController {
     description: 'Agent PATCH success',
   })
   async updateById(
-    @param.path.number('id') id: number,
+    @param.path.number('id') id: string,
     @requestBody({
       content: {
         'application/json': {
@@ -127,7 +127,7 @@ export class AgentController {
     description: 'Agent PUT success',
   })
   async replaceById(
-    @param.path.number('id') id: number,
+    @param.path.number('id') id: string,
     @requestBody() agent: Agent,
   ): Promise<void> {
     await this.agentRepository.replaceById(id, agent);
@@ -137,7 +137,7 @@ export class AgentController {
   @response(204, {
     description: 'Agent DELETE success',
   })
-  async deleteById(@param.path.number('id') id: number): Promise<void> {
+  async deleteById(@param.path.number('id') id: string): Promise<void> {
     await this.agentRepository.deleteById(id);
   }
 }

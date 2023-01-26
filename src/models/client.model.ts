@@ -15,9 +15,9 @@ export class Client extends User {
 
 
   @property({
-    type: 'number',
+    type: 'string',
   })
-  id?: number;
+  id?: string;
   //agents: Agent[];
   // Define well-known properties here
   @property({

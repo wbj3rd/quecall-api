@@ -1,7 +1,7 @@
 import { IAuthUser } from 'loopback4-authentication';
 import { UserModifiableEntity } from './user-modifiable-entity.model';
 export declare class User extends UserModifiableEntity implements IAuthUser {
-    id?: number;
+    id?: string;
     firstName: string;
     lastName: string;
     middleName?: string;

@@ -11,9 +11,9 @@ export class Agent extends User {
 
 
   @property({
-    type: 'number',
+    type: 'string',
   })
-  id?: number;
+  id?: string;
   //@hasOne(() => Extension)
   //extension: Extension;
 
