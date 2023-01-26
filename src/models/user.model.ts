@@ -20,13 +20,13 @@ export class User extends UserModifiableEntity implements IAuthUser {
     required: true,
     name: 'first_name',
   })
-  firstName: string;
+  firstName?: string;
 
   @property({
     type: 'string',
     name: 'last_name',
   })
-  lastName: string;
+  lastName?: string;
 
   @property({
     type: 'string',
@@ -38,7 +38,7 @@ export class User extends UserModifiableEntity implements IAuthUser {
     type: 'string',
     required: true,
   })
-  username: string;
+  username?: string;
 
   @property({
     type: 'string',
