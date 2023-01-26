@@ -1,6 +1,4 @@
 export * from '.';
-export * from './agent.model';
-export * from './client.model';
 export * from './extension.model';
 export * from './music.model';
 export * from './phone-number.model';

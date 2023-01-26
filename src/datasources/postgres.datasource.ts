@@ -5,11 +5,12 @@ const config = {
   name: 'postgres',
   connector: 'postgresql',
   // url: 'http://localhost',
-  host: 'postgres-postgresql',
+//  host: 'postgres-postgresql',
+  host: 'localhost',
   port: 5432,
   user: 'postgres',
   password: 'password',
-  database: 'public'
+  database: 'quecall'
 };
 
 // Observe application's life cycle to disconnect the datasource when

@@ -13,15 +13,19 @@ tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         id: true,
-        generated: true
     }),
     tslib_1.__metadata("design:type", String)
 ], User.prototype, "id", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
-        required: true,
         name: 'first_name',
+        postgresql: {
+            columnName: 'first_name',
+            dataType: 'VARCHAR',
+            dataLength: 20,
+            nullable: 'YES',
+        },
     }),
     tslib_1.__metadata("design:type", String)
 ], User.prototype, "firstName", void 0);
@@ -29,6 +33,12 @@ tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         name: 'last_name',
+        postgresql: {
+            columnName: 'last_name',
+            dataType: 'VARCHAR',
+            dataLength: 20,
+            nullable: 'YES',
+        },
     }),
     tslib_1.__metadata("design:type", String)
 ], User.prototype, "lastName", void 0);
@@ -42,7 +52,6 @@ tslib_1.__decorate([
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
-        required: true,
     }),
     tslib_1.__metadata("design:type", String)
 ], User.prototype, "username", void 0);
@@ -99,9 +108,47 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], User.prototype, "lastLogin", void 0);
+tslib_1.__decorate([
+    (0, repository_1.property)({
+        type: "string",
+        name: "kc_id"
+    }),
+    tslib_1.__metadata("design:type", String)
+], User.prototype, "kc_id", void 0);
+tslib_1.__decorate([
+    (0, repository_1.property)({
+        type: "object",
+        name: "attributes"
+    }),
+    tslib_1.__metadata("design:type", Object)
+], User.prototype, "attributes", void 0);
+tslib_1.__decorate([
+    (0, repository_1.property)({
+        type: "object",
+        name: "user_profile_metadata"
+    }),
+    tslib_1.__metadata("design:type", Object)
+], User.prototype, "userProfileMetadata", void 0);
+tslib_1.__decorate([
+    (0, repository_1.property)({
+        type: "boolean",
+        name: "email_verified"
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], User.prototype, "emailVerified", void 0);
+tslib_1.__decorate([
+    (0, repository_1.property)({
+        type: "boolean",
+        name: "profile_complete"
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], User.prototype, "profileComplete", void 0);
 User = tslib_1.__decorate([
     (0, repository_1.model)({
         name: 'users',
+        settings: {
+            strict: "filter"
+        }
     }),
     tslib_1.__metadata("design:paramtypes", [Object])
 ], User);

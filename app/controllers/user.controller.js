@@ -45,8 +45,7 @@ tslib_1.__decorate([
         content: {
             'application/json': {
                 schema: (0, rest_1.getModelSchemaRef)(models_1.User, {
-                    title: 'NewUser',
-                    exclude: ['id'],
+                    title: 'NewUser'
                 }),
             },
         },
@@ -74,7 +73,7 @@ tslib_1.__decorate([
             'application/json': {
                 schema: {
                     type: 'array',
-                    items: (0, rest_1.getModelSchemaRef)(models_1.User, { includeRelations: true }),
+                    items: (0, rest_1.getModelSchemaRef)(models_1.User),
                 },
             },
         },

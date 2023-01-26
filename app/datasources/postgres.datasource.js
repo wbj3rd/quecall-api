@@ -8,11 +8,12 @@ const config = {
     name: 'postgres',
     connector: 'postgresql',
     // url: 'http://localhost',
-    host: 'postgres-postgresql',
+    //  host: 'postgres-postgresql',
+    host: 'localhost',
     port: 5432,
     user: 'postgres',
     password: 'password',
-    database: 'bitnami_keycloak'
+    database: 'quecall'
 };
 // Observe application's life cycle to disconnect the datasource when
 // application is stopped. This allows the application to be shut down

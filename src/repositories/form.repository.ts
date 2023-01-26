@@ -1,16 +1,16 @@
 import {inject} from '@loopback/core';
 import {DefaultCrudRepository} from '@loopback/repository';
 import {PostgresDataSource} from '../datasources';
-import {Queue, QueueRelations} from '../models';
+import {Form, FormRelations} from '../models';
 
-export class QueueRepository extends DefaultCrudRepository<
-  Queue,
-  typeof Queue.prototype.id,
-  QueueRelations
+export class FormRepository extends DefaultCrudRepository<
+  Form,
+  typeof Form.prototype.id,
+  FormRelations
 > {
   constructor(
     @inject('datasources.postgres') dataSource: PostgresDataSource,
   ) {
-    super(Queue, dataSource);
+    super(Form, dataSource);
   }
 }

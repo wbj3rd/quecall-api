@@ -2,8 +2,8 @@ import { IAuthUser } from 'loopback4-authentication';
 import { UserModifiableEntity } from './user-modifiable-entity.model';
 export declare class User extends UserModifiableEntity implements IAuthUser {
     id?: string;
-    firstName: string;
-    lastName: string;
+    firstName?: string;
+    lastName?: string;
     middleName?: string;
     username: string;
     email?: string;
@@ -14,6 +14,12 @@ export declare class User extends UserModifiableEntity implements IAuthUser {
     industry?: string;
     defaultTenant: number;
     lastLogin?: string;
+    kc_id?: string;
+    attributes?: {};
+    userProfileMetadata?: {};
+    emailVerified?: boolean;
+    profileComplete?: boolean;
+    [prop: string]: any;
     constructor(data?: Partial<User>);
 }
 export interface UserRelations {

@@ -6,25 +6,38 @@ import { UserModifiableEntity } from './user-modifiable-entity.model';
 
 @model({
   name: 'users',
+  settings:{
+    strict: "filter"
+  }
 })
 export class User extends UserModifiableEntity implements IAuthUser {
   @property({
     type: 'string',
     id: true,
-    generated: true
   })
   id?: string;
 
   @property({
     type: 'string',
-    required: true,
     name: 'first_name',
+       postgresql: {
+      columnName: 'first_name',
+      dataType: 'VARCHAR',
+      dataLength: 20,
+      nullable: 'YES',
+    },
   })
   firstName?: string;
 
   @property({
     type: 'string',
-    name: 'last_name',
+    name: 'last_name',  
+      postgresql: {
+      columnName: 'last_name',
+      dataType: 'VARCHAR',
+      dataLength: 20,
+      nullable: 'YES',
+    },
   })
   lastName?: string;
 
@@ -36,7 +49,7 @@ export class User extends UserModifiableEntity implements IAuthUser {
 
   @property({
     type: 'string',
-    required: true,
+   
   })
   username: string;
 
@@ -85,7 +98,37 @@ export class User extends UserModifiableEntity implements IAuthUser {
   })
   lastLogin?: string;
 
+  @property({
+    type: "string",
+    name: "kc_id"
+  })
+  kc_id?:string
 
+  @property({
+    type: "object",
+    name: "attributes"
+  })
+  attributes?:{}
+
+  @property({
+    type: "object",
+    name: "user_profile_metadata"
+  })
+  userProfileMetadata?:{}
+
+  @property({
+    type: "boolean",
+    name: "email_verified"
+  })
+  emailVerified?:boolean
+
+  @property({
+    type: "boolean",
+    name: "profile_complete"
+  })
+  profileComplete?:boolean
+
+  [prop: string]: any;
 
   constructor(data?: Partial<User>) {
     super(data);
