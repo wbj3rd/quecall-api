@@ -9,7 +9,7 @@ const config = {
   port: 5432,
   user: 'postgres',
   password: 'password',
-  database: 'bitnami_keycloak'
+  database: 'public'
 };
 
 // Observe application's life cycle to disconnect the datasource when
