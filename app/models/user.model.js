@@ -13,6 +13,7 @@ tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         id: true,
+        generated: true
     }),
     tslib_1.__metadata("design:type", String)
 ], User.prototype, "id", void 0);
