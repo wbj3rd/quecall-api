@@ -43,6 +43,7 @@ export class UserController {
     })
     user: Omit<User, 'id'>,
   ): Promise<User> {
+    console.log(user)
     return this.userRepository.create(user);
   }
 

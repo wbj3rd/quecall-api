@@ -11,6 +11,7 @@ let UserController = class UserController {
         this.userRepository = userRepository;
     }
     async create(user) {
+        console.log(user);
         return this.userRepository.create(user);
     }
     async count(where) {
