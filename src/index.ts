@@ -30,7 +30,9 @@ if (require.main === module) {
         // useful when used with OpenAPI-to-GraphQL to locate your application
         setServersFromRequest: true,
       },
+    
     },
+    protocol: 'https'
   };
   main(config).catch(err => {
     console.error('Cannot start the application.', err);

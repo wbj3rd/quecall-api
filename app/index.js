@@ -32,6 +32,7 @@ if (require.main === module) {
                 setServersFromRequest: true,
             },
         },
+        protocol: 'https'
     };
     main(config).catch(err => {
         console.error('Cannot start the application.', err);
